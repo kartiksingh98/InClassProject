@@ -1,0 +1,23 @@
+﻿@model IEnumerable<InClassProject.titleauthor>
+
+@{
+    ViewBag.title = "details";
+}
+
+<h2>details</h2>
+
+<div>
+    <h4>titleauthor</h4>
+    <hr />
+    @foreach (var item in Model)
+    {
+        @item.title.title1
+
+        <br />
+    }
+
+</div>
+<p>
+    @Html.ActionLink("edit", "edit", new { /* id = model.primarykey */ }) |
+    @Html.ActionLink("back to list", "index")
+</p>
